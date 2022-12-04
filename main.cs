@@ -28,25 +28,41 @@ class Program
         Console.Write("\nChoose the beverage\n( water, soda, coffie, shake ) : "); beverageInput = Console.ReadLine();
         Console.Write("\nChoose number of topping\nYou must add at least 1 topping : "); topping = Convert.ToInt32(Console.ReadLine());
 
-        if (sizeInput == "M") {
+        if (sizeInput == "M")
+        {
             size = 8;
-        } else if (sizeInput == "L") {
+        } 
+        else if (sizeInput == "L")
+        {
             size = 10;
-        } else if (sizeInput == "XL") {
+        } 
+        else if (sizeInput == "XL") 
+        {
             size = 12;
-        } else {
+        } 
+        else 
+        {
             size = 0;
         }
-        
-        if (beverageInput == "water") {
+
+        if (beverageInput == "water") 
+        {
             beverage = 1;
-        } else if (beverageInput == "soda") {
+        } 
+        else if (beverageInput == "soda") 
+        {
             beverage = 2;
-        } else if (beverageInput == "coffie") {
+        } 
+        else if (beverageInput == "coffie") 
+        {
             beverage = 3;
-        } else if (beverageInput == "shake") {
+        }
+        else if (beverageInput == "shake") 
+        {
             beverage = 4;
-        } else {
+        } 
+        else 
+        {
             beverage = 0;
         }
 
@@ -54,9 +70,12 @@ class Program
         price = size + beverage + topping;
         answer = price + (price * HST);
 
-        if (check == 0) {
+        if (check == 0) 
+        {
             Console.WriteLine("\nPlease input properly");
-        } else {
+        } 
+        else 
+        {
             Console.WriteLine("\nThe size of the pizza is : " + sizeInput + " (" + size + " $)");
             Console.WriteLine("The beverage is : " + beverageInput + " (" + beverage + " $)");
             Console.WriteLine("The number of topping is : " + topping + " (" + topping + " $)");
