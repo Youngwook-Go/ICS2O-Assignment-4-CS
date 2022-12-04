@@ -31,50 +31,50 @@ class Program
         if (sizeInput == "M")
         {
             size = 8;
-        } 
+        }
         else if (sizeInput == "L")
         {
             size = 10;
-        } 
-        else if (sizeInput == "XL") 
+        }
+        else if (sizeInput == "XL")
         {
             size = 12;
-        } 
-        else 
+        }
+        else
         {
             size = 0;
         }
 
-        if (beverageInput == "water") 
+        if (beverageInput == "water")
         {
             beverage = 1;
-        } 
-        else if (beverageInput == "soda") 
+        }
+        else if (beverageInput == "soda")
         {
             beverage = 2;
-        } 
-        else if (beverageInput == "coffie") 
+        }
+        else if (beverageInput == "coffie")
         {
             beverage = 3;
         }
-        else if (beverageInput == "shake") 
+        else if (beverageInput == "shake")
         {
             beverage = 4;
-        } 
-        else 
+        }
+        else
         {
             beverage = 0;
         }
 
-        check = size  * beverage * topping;
+        check = size * beverage * topping;
         price = size + beverage + topping;
         answer = price + (price * HST);
 
-        if (check == 0) 
+        if (check == 0)
         {
             Console.WriteLine("\nPlease input properly");
-        } 
-        else 
+        }
+        else
         {
             Console.WriteLine("\nThe size of the pizza is : " + sizeInput + " (" + size + " $)");
             Console.WriteLine("The beverage is : " + beverageInput + " (" + beverage + " $)");
@@ -82,7 +82,7 @@ class Program
 
             Console.WriteLine("\nThe total price is : " + answer + " $");
         }
-        
+
         Console.WriteLine("\ndone.");
     }
 }
